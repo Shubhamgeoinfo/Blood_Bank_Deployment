@@ -4,16 +4,16 @@ const colors = require("colors");
 const morgan = require("morgan");
 const cors = require("cors");
 const connectDB = require("./config/db");
-import path from "path";
-import { fileURLToPath } from "url";
+const path = require("path);
+
 
 //const swaggerUi = require("swagger-ui-express");
 //const swaggerDocument = require("swagger-output.json");
 
 //dot config
 dotenv.config();
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
 //mongodb connection
 connectDB();
